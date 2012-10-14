@@ -71,7 +71,7 @@ module Meaty
         @buffer << data
       end
 
-      sync if @buffer.length > @max_buffer_size
+      sync if @buffer.length >= @max_buffer_size
     end
 
     def sync
